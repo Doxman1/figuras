@@ -9,7 +9,7 @@ class Figuras:
             altura = float(altura)
             resultado = base * altura
             return resultado
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
 
     def triangulo(self, base, altura):
@@ -18,7 +18,7 @@ class Figuras:
             altura = float(altura)
             resultado = (base * altura) / 2
             return resultado
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
 
     def circunferencia(self, radio):
@@ -27,5 +27,5 @@ class Figuras:
             resultado = math.pi * (radio**2)
             residuo = resultado % 0.01
             return resultado - residuo
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
